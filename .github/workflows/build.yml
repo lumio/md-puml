@@ -19,4 +19,8 @@ jobs:
       - name: Publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish
+        run: |
+          echo _auth=$NPM_TOKEN >> .npmrc; \
+          echo email=benjamin.falk@cyanjoe.com >> .npmrc; \
+          echo always-auth=true >> .npmrc; \
+          npm publish
