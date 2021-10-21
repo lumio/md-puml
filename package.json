@@ -1,0 +1,22 @@
+{
+  "name": "md-puml",
+  "version": "0.1.0",
+  "description": "Converting plantUML in Markdown files on the fly",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumio/md-puml.git"
+  },
+  "keywords": [
+    "puml"
+  ],
+  "author": "Benjamin Falk <lumio@lumio.at>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lumio/md-puml/issues"
+  },
+  "homepage": "https://github.com/lumio/md-puml#readme"
+}
