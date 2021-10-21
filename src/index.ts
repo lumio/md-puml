@@ -1,6 +1,6 @@
 async function main() {
   console.log('Hello world!');
-  console.log('This CLI is WIP');
+  throw new Error('This CLI is WIP.');
 }
 
 if (require.main === module) {
