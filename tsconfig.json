@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "experimentalDecorators": true,
+    "importHelpers": false,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "skipLibCheck": true
+  }
+}

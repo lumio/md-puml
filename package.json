@@ -3,12 +3,19 @@
   "version": "0.1.0",
   "description": "Converting plantUML in Markdown files on the fly",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist/**/*"
+    "dist/**/*",
+    "!dist/**/*.test.js",
+    "!dist/**/*.test.ts"
   ],
+  "bin": {
+    "md-puml": "./dist/index.js"
+  },
   "scripts": {
     "test": "ava",
-    "build": "tsc"
+    "build": "rm -rf dist; tsc",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
