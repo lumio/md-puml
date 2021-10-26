@@ -3,7 +3,7 @@ import { promises as fs } from 'fs';
 
 interface FileReturn {
   file: string;
-  raw: string;
+  content: string;
 }
 
 export default async function* readFiles(
@@ -18,7 +18,7 @@ export default async function* readFiles(
   for (const file of fileList) {
     yield {
       file,
-      raw: await fs.readFile(file, 'utf8'),
+      content: await fs.readFile(file, 'utf8'),
     };
   }
 }
