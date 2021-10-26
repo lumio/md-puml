@@ -1,6 +1,7 @@
+import mdPuml from './lib/md-puml';
+
 async function main() {
-  console.log('Hello world!');
-  throw new Error('This CLI is WIP.');
+  await mdPuml({});
 }
 
 if (require.main === module) {
